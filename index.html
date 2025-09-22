@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nexcent — Community OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">Nexcent</a>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+      <nav class="menu" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn--primary" href="#cta">Register</a>
+      </nav>
+    </div>
+
+    <section class="hero container">
+      <div class="hero__text">
+        <h1>Lessons and insights from <span class="accent">8 years</span></h1>
+        <p>Grow a thriving community with automation, insights, and delightful member experiences.</p>
+        <a class="btn btn--primary" href="#cta">Get Started</a>
+      </div>
+      <div class="hero__art">
+        <div class="mockup">
+          <div class="mockup__bar"></div>
+          <div class="mockup__grid">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="clients container">
+    <p class="eyebrow">Trusted by 500+ teams</p>
+    <ul class="logo-row">
+      <li>●●</li><li>◎</li><li>◼︎</li><li>∞</li><li>▣</li><li>◔</li>
+    </ul>
+  </section>
+
+  <section id="features" class="features container">
+    <h2>Manage your community in one system</h2>
+    <div class="feature-grid">
+      <article class="card">
+        <div class="icon">👥</div>
+        <h3>Membership</h3>
+        <p>Automate onboarding, renewals, and tiered access with fine‑grained controls.</p>
+        <a href="#" class="link">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon">🏛️</div>
+        <h3>Associations</h3>
+        <p>Run chapters, events, and compliance workflows from a single dashboard.</p>
+        <a href="#" class="link">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon">🤝</div>
+        <h3>Clubs & Groups</h3>
+        <p>Coordinate activities, collect dues, and share resources with ease.</p>
+        <a href="#" class="link">Learn more →</a>
+      </article>
+      <article class="card">
+        <div class="icon">📊</div>
+        <h3>Insights</h3>
+        <p>Real‑time analytics to understand engagement and grow sustainably.</p>
+        <a href="#" class="link">Learn more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container testimonials__wrap">
+      <figure class="quote">
+        <blockquote>
+          “Nexcent helped us reinvent our member experience. Engagement rose 42% in the first quarter.”
+        </blockquote>
+        <figcaption>
+          <strong>Tin Brown</strong> — Founder, Pixelgrade
+        </figcaption>
+      </figure>
+      <ul class="stats">
+        <li><span class="num">2,245,341</span><span class="label">Members</span></li>
+        <li><span class="num">46,328</span><span class="label">Communities</span></li>
+        <li><span class="num">828,867</span><span class="label">Events</span></li>
+        <li><span class="num">1,926,438</span><span class="label">Reports</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="cta" class="cta">
+    <div class="container cta__box">
+      <h2>Helping local businesses reinvent themselves</h2>
+      <p>Launch in minutes with templates, integrations, and a blazing‑fast member portal.</p>
+      <a class="btn btn--light" href="#">Start free trial</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--light" href="#">Nexcent</a>
+        <p class="muted">Caring is the new marketing. Build meaningful connections at scale.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="subscribe" action="#" method="post">
+        <h4>Subscribe</h4>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button class="btn btn--primary" type="submit">Join</button>
+      </form>
+    </div>
+    <div class="container legal">
+      <small>© 2025 Nexcent, Inc. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.menu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+</body>
+</html>
